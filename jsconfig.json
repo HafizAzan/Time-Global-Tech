@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ESNext",
+    "types": ["vite/client"],
+    "isolatedModules": true,
+    "module": "commonjs",
+    "baseUrl": "app"
+  },
+  "include": ["app/**/*", "config-overrides.js"],
+  "exclude": ["node_modules"]
 }
